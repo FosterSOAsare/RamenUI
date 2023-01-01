@@ -15,6 +15,7 @@ body {
 	height: auto;
 	min-height: 100vh;
 	box-shadow: -50px -20px 100px rgba(0, 0, 0, 0.4), 50px 50px 100px rgba(0, 0, 0, 0.4);
+	overflow-x: hidden;
 }
 
 // DESKTOP FIRST
@@ -211,14 +212,13 @@ main {
 		#about {
 			width: 100%;
 			height: 550px;
-			background-color: red;
 			margin-top: 50px;
 			@include flex(center, center);
 			position: relative;
 			.circle {
 				position: relative;
-				width: 350px;
-				height: 350px;
+				width: 300px;
+				height: 300px;
 				@include flex(center, center);
 				.outer {
 					filter: blur(25px);
@@ -230,8 +230,8 @@ main {
 				}
 				.inner__circle {
 					position: absolute;
-					width: 80%;
-					height: 80%;
+					width: 90%;
+					height: 90%;
 					border-radius: 50%;
 					background: $gradient1;
 				}
@@ -254,20 +254,20 @@ main {
 				width: 560px;
 				height: auto;
 				min-height: 200px;
-				// background-color: green;
 				position: absolute;
 				color: white;
 				font-size: 14px;
 				p {
 					font-size: 12px;
 					font-weight: normal;
-					line-height: 20px;
+					line-height: 25px;
 					margin-left: auto;
 				}
 			}
 			.about__text1 {
-				top: 30px;
+				top: 90px;
 				left: 15px;
+				width: 530px;
 				h3 {
 					font-size: 24px;
 					margin-bottom: 10px;
@@ -275,8 +275,237 @@ main {
 			}
 			.about__text2 {
 				right: 0;
-				bottom: 50px;
+				bottom: 70px;
+				height: auto;
+				width: 500px;
+				// background-color: green;
 			}
+		}
+
+		#specials {
+			width: 100%;
+			height: auto;
+			min-height: 480px;
+			// background-color: red;
+			margin-top: 20px;
+			text-align: center;
+			color: $white;
+			position: relative;
+
+			.specials__content {
+				width: 500px;
+				height: auto;
+				position: absolute;
+				padding: 0 30px;
+				top: 0;
+				left: 0;
+				right: 0;
+				margin: 0 auto;
+				z-index: 2;
+				background-color: $background;
+				h1 {
+					font-size: 32px;
+				}
+				p {
+					width: 80%;
+					margin: 0 auto;
+					margin-top: 20px;
+					font-size: 12px;
+					font-weight: 400;
+				}
+			}
+
+			.specials__dishes {
+				width: 80%;
+				height: 200px;
+				position: absolute;
+				top: 110px;
+				z-index: 2;
+				right: 0;
+				left: 0;
+				margin: 0 auto;
+				img {
+					width: 100%;
+					height: 100%;
+				}
+				.specials__dish {
+					width: 130px;
+					height: 70px;
+					position: absolute;
+					&::after {
+						content: "1";
+						width: 20px;
+						height: 20px;
+						background: $bullets;
+						position: absolute;
+						border-radius: 50%;
+						@include flex(center, center);
+						top: 0;
+						right: 0;
+						font-size: 10px;
+					}
+					&:nth-child(1) {
+						left: -5px;
+						top: -30px;
+						&::after {
+							right: 20px;
+							top: -5px;
+						}
+					}
+					&:nth-child(2) {
+						left: 180px;
+						top: 31px;
+						&::after {
+							left: 20px;
+							top: -5px;
+							content: "2";
+						}
+					}
+					&:nth-child(3) {
+						left: 380px;
+						top: 40px;
+						&::after {
+							left: 20px;
+							top: -5px;
+							content: "3";
+						}
+					}
+					&:nth-child(4) {
+						left: 580px;
+						top: 28px;
+						&::after {
+							left: 20px;
+							top: -5px;
+							content: "4";
+						}
+					}
+					&:nth-child(5) {
+						right: -5px;
+						top: -30px;
+						&::after {
+							left: 20px;
+							top: -5px;
+							content: "5";
+						}
+					}
+				}
+			}
+			.circle {
+				width: 70%;
+				height: 150px;
+				border-radius: 50%;
+				background: $gradient1;
+				position: absolute;
+				top: 70px;
+				left: 0;
+				right: 0;
+				margin: 0 auto;
+				z-index: 1;
+				@include flex(center, center);
+				.inner {
+					width: 98%;
+					height: 96%;
+					background-color: $background;
+					border-radius: 50%;
+				}
+			}
+
+			.dish__prices {
+				width: 100%;
+				height: 120px;
+				position: absolute;
+				top: 300px;
+				display: grid;
+				grid-template-columns: repeat(4, 1fr);
+				gap: 20px;
+				.dish {
+					width: 100%;
+					height: 100%;
+					@include flex(flex-start, flex-start);
+					padding: 10px;
+					.number {
+						width: 30px;
+						height: 30px;
+						border-radius: 50%;
+						@include flex(center, center);
+						background-color: red;
+						font-size: 14px;
+						margin-right: 20px;
+					}
+					p {
+						font-weight: bold;
+						&:nth-child(1) {
+							text-align: left;
+							font-size: 12px;
+							margin-bottom: 5px;
+						}
+						&:nth-child(2) {
+							font-size: 10px;
+							color: $nav__active;
+						}
+					}
+				}
+			}
+		}
+
+		#discounts {
+			width: 100%;
+			height: auto;
+			min-height: 90vh;
+			position: relative;
+			.discount__text {
+				width: 30%;
+				height: 200px;
+				h2,
+				p {
+					text-transform: capitalize;
+					color: white;
+					font-size: 30px;
+				}
+				p {
+					font-weight: bold;
+					background-image: $gradient1;
+					background-size: 100%;
+					background-clip: text;
+					background-repeat: repeat;
+					-webkit-background-clip: text;
+					-webkit-text-fill-color: transparent;
+					-moz-background-clip: text;
+					margin-top: 15px;
+					-moz-text-fill-color: transparent;
+				}
+
+				button {
+					background: $gradient1;
+					border: none;
+					border-radius: 5px;
+					height: 30px;
+					width: 100px;
+					margin-top: 20px;
+					color: white;
+					font-size: 12px;
+					font-weight: bold;
+				}
+			}
+			.discount__image {
+				width: 32%;
+				height: 80%;
+				transform: rotate(45deg);
+				position: absolute;
+				left: 400px;
+				top: 30px;
+				img {
+					width: 250%;
+					height: 190%;
+					transform: rotate(-50deg);
+					position: absolute;
+					left: -350px;
+					top: -250px;
+				}
+			}
+		}
+
+		#menu {
 		}
 	}
 }

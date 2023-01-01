@@ -12,6 +12,7 @@ body {
   height: auto;
   min-height: 100vh;
   box-shadow: -50px -20px 100px rgba(0, 0, 0, 0.4), 50px 50px 100px rgba(0, 0, 0, 0.4);
+  overflow-x: hidden;
 }
 
 header {
@@ -199,7 +200,6 @@ main .main__container #hero .hero__image img {
 main .main__container #about {
   width: 100%;
   height: 550px;
-  background-color: red;
   margin-top: 50px;
   display: flex;
   align-items: center;
@@ -209,8 +209,8 @@ main .main__container #about {
 
 main .main__container #about .circle {
   position: relative;
-  width: 350px;
-  height: 350px;
+  width: 300px;
+  height: 300px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -227,8 +227,8 @@ main .main__container #about .circle .outer {
 
 main .main__container #about .circle .inner__circle {
   position: absolute;
-  width: 80%;
-  height: 80%;
+  width: 90%;
+  height: 90%;
   border-radius: 50%;
   background: linear-gradient(273.78deg, #ff1f00 5.01%, #ff6b00 47.1%, #ffc700 98.99%);
 }
@@ -259,13 +259,14 @@ main .main__container #about .about__text {
 main .main__container #about .about__text p {
   font-size: 12px;
   font-weight: normal;
-  line-height: 20px;
+  line-height: 25px;
   margin-left: auto;
 }
 
 main .main__container #about .about__text1 {
-  top: 30px;
+  top: 90px;
   left: 15px;
+  width: 530px;
 }
 
 main .main__container #about .about__text1 h3 {
@@ -275,5 +276,264 @@ main .main__container #about .about__text1 h3 {
 
 main .main__container #about .about__text2 {
   right: 0;
-  bottom: 50px;
+  bottom: 70px;
+  height: auto;
+  width: 500px;
+}
+
+main .main__container #specials {
+  width: 100%;
+  height: auto;
+  min-height: 480px;
+  margin-top: 20px;
+  text-align: center;
+  color: #ffffff;
+  position: relative;
+}
+
+main .main__container #specials .specials__content {
+  width: 500px;
+  height: auto;
+  position: absolute;
+  padding: 0 30px;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  z-index: 2;
+  background-color: #050313;
+}
+
+main .main__container #specials .specials__content h1 {
+  font-size: 32px;
+}
+
+main .main__container #specials .specials__content p {
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 20px;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+main .main__container #specials .specials__dishes {
+  width: 80%;
+  height: 200px;
+  position: absolute;
+  top: 110px;
+  z-index: 2;
+  right: 0;
+  left: 0;
+  margin: 0 auto;
+}
+
+main .main__container #specials .specials__dishes img {
+  width: 100%;
+  height: 100%;
+}
+
+main .main__container #specials .specials__dishes .specials__dish {
+  width: 130px;
+  height: 70px;
+  position: absolute;
+}
+
+main .main__container #specials .specials__dishes .specials__dish::after {
+  content: "1";
+  width: 20px;
+  height: 20px;
+  background: rgba(255, 31, 0, 0.7);
+  position: absolute;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 0;
+  right: 0;
+  font-size: 10px;
+}
+
+main .main__container #specials .specials__dishes .specials__dish:nth-child(1) {
+  left: -5px;
+  top: -30px;
+}
+
+main .main__container #specials .specials__dishes .specials__dish:nth-child(1)::after {
+  right: 20px;
+  top: -5px;
+}
+
+main .main__container #specials .specials__dishes .specials__dish:nth-child(2) {
+  left: 180px;
+  top: 31px;
+}
+
+main .main__container #specials .specials__dishes .specials__dish:nth-child(2)::after {
+  left: 20px;
+  top: -5px;
+  content: "2";
+}
+
+main .main__container #specials .specials__dishes .specials__dish:nth-child(3) {
+  left: 380px;
+  top: 40px;
+}
+
+main .main__container #specials .specials__dishes .specials__dish:nth-child(3)::after {
+  left: 20px;
+  top: -5px;
+  content: "3";
+}
+
+main .main__container #specials .specials__dishes .specials__dish:nth-child(4) {
+  left: 580px;
+  top: 28px;
+}
+
+main .main__container #specials .specials__dishes .specials__dish:nth-child(4)::after {
+  left: 20px;
+  top: -5px;
+  content: "4";
+}
+
+main .main__container #specials .specials__dishes .specials__dish:nth-child(5) {
+  right: -5px;
+  top: -30px;
+}
+
+main .main__container #specials .specials__dishes .specials__dish:nth-child(5)::after {
+  left: 20px;
+  top: -5px;
+  content: "5";
+}
+
+main .main__container #specials .circle {
+  width: 70%;
+  height: 150px;
+  border-radius: 50%;
+  background: linear-gradient(273.78deg, #ff1f00 5.01%, #ff6b00 47.1%, #ffc700 98.99%);
+  position: absolute;
+  top: 70px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+main .main__container #specials .circle .inner {
+  width: 98%;
+  height: 96%;
+  background-color: #050313;
+  border-radius: 50%;
+}
+
+main .main__container #specials .dish__prices {
+  width: 100%;
+  height: 120px;
+  position: absolute;
+  top: 300px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+main .main__container #specials .dish__prices .dish {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 10px;
+}
+
+main .main__container #specials .dish__prices .dish .number {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: red;
+  font-size: 14px;
+  margin-right: 20px;
+}
+
+main .main__container #specials .dish__prices .dish p {
+  font-weight: bold;
+}
+
+main .main__container #specials .dish__prices .dish p:nth-child(1) {
+  text-align: left;
+  font-size: 12px;
+  margin-bottom: 5px;
+}
+
+main .main__container #specials .dish__prices .dish p:nth-child(2) {
+  font-size: 10px;
+  color: #ffc700;
+}
+
+main .main__container #discounts {
+  width: 100%;
+  height: auto;
+  min-height: 90vh;
+  position: relative;
+}
+
+main .main__container #discounts .discount__text {
+  width: 30%;
+  height: 200px;
+}
+
+main .main__container #discounts .discount__text h2,
+main .main__container #discounts .discount__text p {
+  text-transform: capitalize;
+  color: white;
+  font-size: 30px;
+}
+
+main .main__container #discounts .discount__text p {
+  font-weight: bold;
+  background-image: linear-gradient(273.78deg, #ff1f00 5.01%, #ff6b00 47.1%, #ffc700 98.99%);
+  background-size: 100%;
+  background-clip: text;
+  background-repeat: repeat;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  margin-top: 15px;
+  -moz-text-fill-color: transparent;
+}
+
+main .main__container #discounts .discount__text button {
+  background: linear-gradient(273.78deg, #ff1f00 5.01%, #ff6b00 47.1%, #ffc700 98.99%);
+  border: none;
+  border-radius: 5px;
+  height: 30px;
+  width: 100px;
+  margin-top: 20px;
+  color: white;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+main .main__container #discounts .discount__image {
+  width: 32%;
+  height: 80%;
+  transform: rotate(45deg);
+  position: absolute;
+  left: 400px;
+  top: 30px;
+}
+
+main .main__container #discounts .discount__image img {
+  width: 250%;
+  height: 190%;
+  transform: rotate(-50deg);
+  position: absolute;
+  left: -350px;
+  top: -250px;
 }
