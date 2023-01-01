@@ -656,6 +656,9 @@ main .main__container #feedback .feedback__fold .customer:nth-child(1) {
   margin-left: -90px;
   background-color: green;
 }
+main .main__container #feedback .feedback__fold .customer:nth-child(1) .inner .ratings {
+  padding-left: 30px;
+}
 main .main__container #feedback .feedback__fold .customer:nth-child(2) {
   margin-top: 55px;
 }
@@ -702,7 +705,13 @@ main .main__container #feedback .feedback__fold .customer .inner .content .ratin
   width: 100%;
   height: 20px;
   margin: 10px 0;
-  background-color: red;
+}
+main .main__container #feedback .feedback__fold .customer .inner .content .ratings i {
+  font-size: 10px;
+  color: #ffc700;
+}
+main .main__container #feedback .feedback__fold .customer .inner .content .ratings .unfilled {
+  color: rgba(255, 255, 255, 0.4);
 }
 main .main__container #feedback .feedback__fold .customer .inner .content .comment {
   font-size: 12px;
