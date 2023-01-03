@@ -869,11 +869,15 @@ main .main__container #feedback .feedback__indicators .active::before {
     grid-template-columns: 1fr 1fr;
     gap: 34px 36px;
   }
+  main .main__container #menu .menu__content .dish {
+    min-height: 390px;
+  }
   main .main__container #feedback .feedback__fold {
     gap: 12px;
   }
   main .main__container #feedback .feedback__fold .customer {
     width: 45%;
+    height: 290px;
   }
   main .main__container #feedback .feedback__fold .customer:nth-child(1) {
     margin-left: -25%;

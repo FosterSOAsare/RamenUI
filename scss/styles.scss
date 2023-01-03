@@ -927,6 +927,9 @@ main {
 				.menu__content {
 					grid-template-columns: 1fr 1fr;
 					gap: 34px 36px;
+					.dish {
+						min-height: 390px;
+					}
 				}
 			}
 			#feedback {
@@ -934,6 +937,8 @@ main {
 					gap: 12px;
 					.customer {
 						width: 45%;
+						height: 290px;
+
 						&:nth-child(1) {
 							margin-left: -25%;
 						}
