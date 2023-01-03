@@ -10,12 +10,16 @@
   font-family: "Montserrat", sans-serif;
 }
 
+html {
+  width: 100vw;
+  overflow-x: hidden;
+}
+
 body {
   background-color: #050313;
-  width: 100%;
+  max-width: 100vw;
   height: auto;
   min-height: 100vh;
-  box-shadow: -50px -20px 100px rgba(0, 0, 0, 0.4), 50px 50px 100px rgba(0, 0, 0, 0.4);
   overflow-x: hidden;
 }
 
@@ -217,9 +221,9 @@ main .main__container #about .circle .inner__circle {
   background: linear-gradient(273.78deg, #ff1f00 5.01%, #ff6b00 47.1%, #ffc700 98.99%);
 }
 main .main__container #about .sticks {
-  width: 100%;
+  width: 90%;
+  margin: 0 auto;
   height: 100%;
-  background-color: green;
   background: url("../images/chop__sticks.svg");
   background-repeat: no-repeat;
   background-position: center;
@@ -228,6 +232,7 @@ main .main__container #about .sticks {
   position: absolute;
   top: 0;
   left: 0;
+  right: 0;
 }
 main .main__container #about .about__text {
   width: 560px;
@@ -468,20 +473,18 @@ main .main__container #discounts .discount__text button {
   font-weight: bold;
 }
 main .main__container #discounts .discount__image {
-  width: 32%;
-  height: 80%;
-  transform: rotate(45deg);
+  width: 100%;
+  height: 100%;
   position: absolute;
-  left: 400px;
-  top: 30px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  top: -120px;
 }
 main .main__container #discounts .discount__image img {
-  width: 250%;
-  height: 190%;
-  transform: rotate(-50deg);
-  position: absolute;
-  left: -200px;
-  top: -320px;
+  width: 120%;
+  height: 120%;
+  margin-left: -10%;
 }
 main .main__container #menu {
   width: 100%;
