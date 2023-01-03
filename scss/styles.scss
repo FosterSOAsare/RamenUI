@@ -1,4 +1,8 @@
 @import "imports/variables_root";
+@font-face {
+	font-family: "sujoka";
+	src: url("../fonts/font1.otf") format("opentype");
+}
 
 // Fonts
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap");
