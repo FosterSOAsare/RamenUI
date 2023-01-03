@@ -576,7 +576,6 @@ main .main__container #menu .menu__content .dish {
 main .main__container #menu .menu__content .dish .dish__image {
   width: 100%;
   height: 50%;
-  background-color: red;
   position: relative;
 }
 main .main__container #menu .menu__content .dish .dish__image img {
@@ -698,7 +697,6 @@ main .main__container #feedback .feedback__fold .customer .inner .profile {
   height: 120px;
   border-radius: 50%;
   z-index: 1;
-  background-color: red;
   overflow: hidden;
   top: -50px;
   left: 0;
