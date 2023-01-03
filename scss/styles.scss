@@ -730,6 +730,26 @@ main {
 						}
 					}
 				}
+
+				&::before,
+				&::after {
+					content: "";
+					width: 340px;
+					height: 85%;
+					position: absolute;
+					top: 0;
+					z-index: 2;
+				}
+				&::before {
+					left: -10px;
+					background: rgb(5, 3, 19);
+					background: linear-gradient(69deg, rgba(5, 3, 19, 0.9) 10%, rgba(5, 3, 19, 0.9) 21%, rgba(5, 3, 19, 0.9) 100%);
+				}
+				&::after {
+					right: -10px;
+					background: rgb(5, 3, 19);
+					background: linear-gradient(-69deg, rgba(5, 3, 19, 0.9) 10%, rgba(5, 3, 19, 0.9) 21%, rgba(5, 3, 19, 0.9) 100%);
+				}
 			}
 			.feedback__indicators {
 				width: 100%;
