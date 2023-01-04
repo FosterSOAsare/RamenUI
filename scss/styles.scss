@@ -1265,6 +1265,7 @@ main {
 		.main__container {
 			#specials {
 				.specials__dishes {
+					margin-top: 17px;
 					.specials__dish {
 						&:nth-child(1) {
 							top: -27px;
@@ -1279,6 +1280,13 @@ main {
 							top: -22px;
 							left: 65%;
 						}
+					}
+				}
+				.circle {
+					margin-top: 18px;
+					height: 200px;
+					inner {
+						background-color: green;
 					}
 				}
 			}

@@ -1164,6 +1164,9 @@ main .main__container #feedback .feedback__indicators .active::before {
   }
 }
 @media screen and (max-width: 466px) {
+  main .main__container #specials .specials__dishes {
+    margin-top: 17px;
+  }
   main .main__container #specials .specials__dishes .specials__dish:nth-child(1) {
     top: -27px;
     left: 2%;
@@ -1175,6 +1178,13 @@ main .main__container #feedback .feedback__indicators .active::before {
   main .main__container #specials .specials__dishes .specials__dish:nth-child(3) {
     top: -22px;
     left: 65%;
+  }
+  main .main__container #specials .circle {
+    margin-top: 18px;
+    height: 200px;
+  }
+  main .main__container #specials .circle inner {
+    background-color: green;
   }
   main .main__container #discounts .discount__image {
     width: 130%;
